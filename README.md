@@ -11,9 +11,11 @@ Static HTML hosting for the app's legal pages on Cloudflare Pages.
 | `/privacy` | `privacy.html` | Privacy Policy (מדיניות פרטיות) |
 | `/accessibility` | `accessibility.html` | Accessibility Statement (הצהרת נגישות) |
 
-Pretty URLs (`/terms` rather than `/terms.html`) are handled by `_redirects`
-— Cloudflare Pages reads it at deploy time and applies the rewrites
-server-side, so app code can link to the clean form.
+Pretty URLs (`/terms` rather than `/terms.html`) are served natively by
+Cloudflare Pages — when a request comes in for `/terms`, Pages
+automatically looks for a matching `terms.html` and serves it. No
+`_redirects` file is needed for this pattern; we previously had one
+and it caused a redirect loop, so it was removed.
 
 ## 🚀 Deploy
 
