@@ -1,0 +1,10 @@
+# Pretty URLs without the .html extension. Cloudflare Pages reads this file
+# at deploy time and applies rewrites server-side, so app links can use the
+# clean form (e.g. https://kikienjoy.com/privacy).
+#
+# Status 200 = rewrite (URL stays the same in the browser).
+# Status 301/302 = redirect (URL changes).
+
+/privacy        /privacy.html       200
+/terms          /terms.html         200
+/accessibility  /accessibility.html 200

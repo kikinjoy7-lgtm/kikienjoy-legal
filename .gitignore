@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Editor caches
+.vscode/
+.idea/
+*.swp
+
+# Cloudflare Pages local preview output (if anyone runs `wrangler pages dev`)
+.wrangler/
+
+# Node (only if someone adds tooling later — kept defensive)
+node_modules/

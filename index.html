@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiki enJoy — Legal</title>
+  <style>
+    :root {
+      --brand: #0F6E56;
+      --brand-light: #E8F5EF;
+      --text: #1A1A1A;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      color: var(--text);
+      line-height: 1.6;
+      background: #FAFAFA;
+    }
+    h1 {
+      color: var(--brand);
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 32px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    li {
+      border-bottom: 1px solid var(--border);
+    }
+    li:last-child { border-bottom: none; }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.15s ease;
+    }
+    a:hover, a:focus {
+      background: var(--brand-light);
+      outline: 2px solid var(--brand);
+      outline-offset: -2px;
+    }
+    .icon { font-size: 20px; min-width: 24px; }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1A1A1A; color: #F5F5F5; }
+      ul { background: #2A2A2A; border-color: #333; }
+      li { border-color: #333; }
+      a { color: #F5F5F5; }
+      a:hover, a:focus { background: #0A4D3C; }
+    }
+  </style>
+</head>
+<body>
+  <h1>📋 Kiki enJoy — מסמכים משפטיים</h1>
+  <p class="subtitle">Legal documents · גרסת טיוטה — ממתינה לאישור משפטי</p>
+
+  <ul>
+    <li><a href="/terms">
+      <span class="icon">📄</span>
+      <span>תנאי שימוש · Terms of Service</span>
+    </a></li>
+    <li><a href="/privacy">
+      <span class="icon">🔒</span>
+      <span>מדיניות פרטיות · Privacy Policy</span>
+    </a></li>
+    <li><a href="/accessibility">
+      <span class="icon">♿</span>
+      <span>הצהרת נגישות · Accessibility Statement</span>
+    </a></li>
+  </ul>
+
+  <footer>© Kiki enJoy</footer>
+</body>
+</html>
