@@ -11,3 +11,7 @@
 
 # Node (only if someone adds tooling later — kept defensive)
 node_modules/
+
+# Internal lawyer-review drafts — NEVER deploy to the public site (contains
+# placeholders + 🟨 lawyer-approval notes). Kept local / shared with the lawyer only.
+drafts/

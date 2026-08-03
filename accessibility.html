@@ -4,418 +4,137 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>הצהרת נגישות | Accessibility Statement — Wooof</title>
-<!-- TODO (post-incorporation): Once a registered company exists (planned
-     entity: Kiki enJoy Ltd., which will operate the Wooof service), add
-     the operating-entity subtitle where legally appropriate. The service
-     is currently operated by a sole proprietor (עוסק מורשה); no
-     Ltd./Company/חברה language about the operator must appear until then. -->
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: #f9fafb;
-    color: #1f2937;
+    background: #F6F7F6;
+    color: #2C2C2A;
     line-height: 1.7;
     padding: 24px 16px;
   }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  .header {
-    border-bottom: 3px solid #0A7A5C;
-    padding-bottom: 20px;
-    margin-bottom: 32px;
-  }
-  .lang-toggle {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-    justify-content: flex-end;
-  }
-  .lang-btn {
-    padding: 8px 16px;
-    border: 1px solid #d1d5db;
-    background: white;
-    color: #6b7280;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s;
-  }
-  .lang-btn.active {
-    background: #4CD9AC;
-    color: #08312A;
-    border-color: #4CD9AC;
-  }
-  h1 {
-    color: #0A7A5C;
-    font-size: 28px;
-    margin-bottom: 8px;
-  }
-  h2 {
-    color: #0A7A5C;
-    font-size: 20px;
-    margin-top: 28px;
-    margin-bottom: 12px;
-  }
-  h3 {
-    color: #1f2937;
-    font-size: 16px;
-    margin-top: 16px;
-    margin-bottom: 8px;
-  }
-  p, li {
-    color: #374151;
-    margin-bottom: 12px;
-  }
-  ul, ol {
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 12px;
-  }
+  .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px 32px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+  .header { border-bottom: 3px solid #065F46; padding-bottom: 20px; margin-bottom: 32px; }
+  .lang-toggle { display: flex; gap: 8px; margin-bottom: 16px; justify-content: flex-end; }
+  .lang-btn { padding: 8px 16px; border: 1px solid #d1d5db; background: white; color: #6b7280; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; }
+  .lang-btn.active { background: #4CD9AC; color: #08312A; border-color: #4CD9AC; }
+  h1 { color: #065F46; font-size: 28px; margin-bottom: 8px; }
+  h2 { color: #065F46; font-size: 20px; margin-top: 28px; margin-bottom: 12px; }
+  h3 { color: #2C2C2A; font-size: 16px; margin-top: 16px; margin-bottom: 8px; }
+  p, li { color: #2C2C2A; margin-bottom: 12px; }
+  ul, ol { margin-right: 24px; margin-left: 24px; margin-bottom: 12px; }
   li { margin-bottom: 6px; }
-  .meta {
-    color: #6b7280;
-    font-size: 14px;
-    margin-bottom: 4px;
-  }
-  .draft-notice {
-    background: #fef3c7;
-    border: 1px solid #f59e0b;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 24px;
-    font-size: 14px;
-    color: #92400e;
-  }
-  .important-box {
-    background: #E7FAF4;
-    border: 1px solid #0A7A5C;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px 0;
-  }
+  .meta { color: #6E6E6E; font-size: 14px; margin-bottom: 4px; }
+  .important-box { background: #E7FAF4; border: 1px solid #065F46; border-radius: 8px; padding: 16px; margin: 16px 0; }
+  .important-box p { margin-bottom: 6px; }
   .content-en { display: none; }
   body[data-lang="en"] .content-he { display: none; }
   body[data-lang="en"] .content-en { display: block; }
   body[data-lang="en"] { direction: ltr; }
   body[data-lang="en"] .container { text-align: left; }
-  .footer {
-    margin-top: 32px;
-    padding-top: 20px;
-    border-top: 1px solid #e5e7eb;
-    color: #6b7280;
-    font-size: 14px;
-  }
-  a { color: #0A7A5C; text-decoration: none; }
+  .footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6E6E6E; font-size: 14px; }
+  .binding-note { font-style: italic; color: #555555; margin: 8px 0; }
+  a { color: #065F46; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  @media (max-width: 600px) {
-    .container { padding: 24px 16px; }
-    h1 { font-size: 22px; }
-    h2 { font-size: 18px; }
-  }
+  @media (max-width: 600px) { .container { padding: 24px 16px; } h1 { font-size: 22px; } h2 { font-size: 18px; } }
 </style>
 </head>
 <body data-lang="he">
 <div class="container">
-
   <div class="lang-toggle">
     <button class="lang-btn active" onclick="setLang('he')">עברית</button>
     <button class="lang-btn" onclick="setLang('en')">English</button>
   </div>
 
-  <div class="draft-notice">
-    ⚠️ <strong>טיוטה</strong> — המסמך מצוי בבדיקה משפטית. גרסה סופית תפורסם לפני השקה רשמית של השירות.
-  </div>
-
   <!-- ============ HEBREW ============ -->
   <div class="content-he">
-
     <div class="header">
       <h1>הצהרת נגישות</h1>
       <p class="meta">Wooof</p>
-      <p class="meta">תאריך עדכון אחרון: 17 ביוני 2026</p>
+      <p class="meta">עודכן לאחרונה: 03.08.2026</p>
     </div>
 
-    <h2>1. מחויבותנו לנגישות</h2>
-    <p>
-      <strong>אפליקציית Wooof</strong> מחויבת להעניק חוויית שימוש שווה ונגישה לכלל המשתמשים, לרבות אנשים עם מוגבלות.
-    </p>
-    <p>
-      אנו מאמינים שכל אחד ראוי לגישה פשוטה ונוחה לשירותים שלנו — ועל כן אנו פועלים באופן רציף להבטיח שהאפליקציה תעמוד בדרישות החוק והתקנים בתחום הנגישות.
-    </p>
+    <p>מפעיל הפלטפורמה (להלן: "<strong>המפעיל</strong>") רואה חשיבות במתן שירות שוויוני, מכבד, נגיש ועצמאי לכלל המשתמשים באפליקציה, לרבות אנשים עם מוגבלות.</p>
+    <p>המפעיל פועל מתוך תפיסת עולם לפיה יש לאפשר לכל אדם, ללא קשר למוגבלותו, ליהנות מחוויית שימוש נוחה ובטוחה בשירותי האפליקציה, וזאת בהתאם להוראות הדין.</p>
 
-    <h2>2. רקע משפטי</h2>
-    <p>
-      הצהרת נגישות זו נערכה בהתאם ל:
-    </p>
-    <ul>
-      <li><strong>חוק שוויון זכויות לאנשים עם מוגבלות, התשנ"ח-1998</strong></li>
-      <li><strong>תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), תשע"ג-2013</strong></li>
-      <li><strong>תקן ישראלי ת"י 5568</strong> — נגישות תכני אינטרנט</li>
-    </ul>
+    <ol>
+      <li>התאמות הנגישות בוצעו בהתאם להמלצות התקן הישראלי (ת"י 5568) לנגישות תכנים באינטרנט ברמה AA, המאמץ את קווי המנחה של הארגון הבינלאומי WCAG 2.1.</li>
+      <li>במסגרת הנגשת האפליקציה, יושמו ההתאמות הטכנולוגיות הבאות:
+        <ol>
+          <li>האפליקציה מותאמת לעבודה עם קוראי מסך נפוצים, לרבות TalkBack במכשירי Android ו-VoiceOver במכשירי iOS. הותאמו תוויות הטקסט (Labels) לכלל הכפתורים, השדות והאלמנטים האינטראקטיביים.</li>
+          <li>האפליקציה תומכת בשינוי גודל הגופנים בהתאם להגדרות המשתמש במערכת ההפעלה, תוך שמירה על מבנה המסכים. כמו כן, הוקפד על יחס ניגודיות תקין בין הטקסט לרקע.</li>
+          <li>הממשק תומך בניווט באמצעות מחוות נגישות סטנדרטיות וניווט מקלדת חיצונית. היררכיית המידע במסכים נבנתה באופן לוגי המאפשר התמצאות קלה ומהירה.</li>
+          <li>שדות הזנת הנתונים (כגון פרטי בעל החיים, כתובת למשלוח ופרטי התקשרות) כוללים הנחיות ברורות, חיווי על שגיאות בזמן אמת ותמיכה במילוי אוטומטי ככל שהדבר מתאפשר.</li>
+        </ol>
+      </li>
+    </ol>
 
-    <h2>3. רמת הנגישות</h2>
-    <p>
-      אנו פועלים להתאמת האפליקציה לרמת נגישות <strong>AA</strong> על פי הנחיות <strong>WCAG 2.1</strong> של ארגון הקונסורציום העולמי של רשת האינטרנט (W3C).
-    </p>
+    <h2>סייגים לנגישות ותוכן גולשים</h2>
+    <ol start="3">
+      <li>המפעיל עושה מאמצים להנגשת כלל חלקי האפליקציה. עם זאת, המשתמש מאשר כי במרחב קהילת "Wanted" מועלה תוכן גולשים הכולל תמונות, טקסטים חופשיים וסימוני מיקומים על גבי מפה, אשר מועלים על ידי צדדים שלישיים בזמן אמת.</li>
+      <li>בשל אופיו של תוכן הגולשים, ייתכן וחלק מהמידע המועלה על ידי המשתמשים (כגון תיאור תמונה חלופי - Alt Text או דיוק בתיאור המילולי) לא יהיה נגיש באופן מלא או תקני.</li>
+      <li>רכיב המפה הדיגיטלית באפליקציה מבוסס על שירותי צד שלישי. לפיכך, ייתכנו מגבלות נגישות ברכיב המפה עצמו הנובעות ממגבלות הספק החיצוני.</li>
+    </ol>
 
+    <h2>פרטי התקשרות</h2>
+    <p>במידה ונתקלתם בקושי בנגישות, ברכיב שאינו נגיש מספיק או אם ברצונכם להציע שיפור, הנכם מוזמנים לפנות אלינו בדרכים הבאות:</p>
     <div class="important-box">
-      <strong>סטטוס נוכחי:</strong>
-      <p>
-        האפליקציה תומכת בתכונות נגישות בסיסיות. אנו פועלים באופן רציף לשיפור והרחבת ההתאמות.
-      </p>
+      <p><strong>שם:</strong> דין צציס</p>
+      <p><strong>טלפון:</strong> 050-6455090</p>
+      <p><strong>דואר אלקטרוני:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></p>
     </div>
 
-    <h2>4. תכונות נגישות באפליקציה</h2>
-
-    <h3>4.1 תמיכה בקוראי מסך</h3>
-    <ul>
-      <li>תמיכה ב-<strong>VoiceOver</strong> במכשירי iPhone ו-iPad</li>
-      <li>תמיכה ב-<strong>TalkBack</strong> במכשירי Android</li>
-      <li>תיוג אלמנטים אינטראקטיביים (כפתורים, קישורים, שדות קלט)</li>
-    </ul>
-
-    <h3>4.2 ניווט ושימוש</h3>
-    <ul>
-      <li>אזורי לחיצה בגודל מינימלי של 44×44 פיקסלים (iOS) / 48×48 פיקסלים (Android)</li>
-      <li>ניווט עקבי וברור בין מסכים</li>
-      <li>הודעות שגיאה ברורות ומפורטות</li>
-    </ul>
-
-    <h3>4.3 התאמה ויזואלית</h3>
-    <ul>
-      <li>ניגודיות צבעים על פי תקן WCAG AA (יחס מינימלי 4.5:1)</li>
-      <li>תמיכה בשינוי גודל גופן ברמת מערכת ההפעלה</li>
-      <li>טקסטים ברורים וקריאים</li>
-    </ul>
-
-    <h3>4.4 רב-לשוניות</h3>
-    <ul>
-      <li>תמיכה מלאה ב-<strong>עברית</strong> (כיוון מימין לשמאל)</li>
-      <li>תמיכה ב-<strong>אנגלית</strong> (כיוון משמאל לימין)</li>
-      <li>תמיכה ב-<strong>רוסית</strong> (כיוון משמאל לימין)</li>
-    </ul>
-
-    <h2>5. תכונות שאינן נגישות במלואן</h2>
-    <p>
-      אנו מודעים לכך שייתכנו מספר תכונות בהן הנגישות עדיין אינה מלאה. אנו פועלים לשיפורן באופן רציף:
-    </p>
-    <ul>
-      <li>חלק מהתמונות באפליקציה (תמונות מוצרים) — תיאורים טקסטואליים מורחבים יתווספו בעדכונים הבאים</li>
-      <li>תכני מודעות בקהילת "Wanted" מועלים על ידי משתמשי הקצה — אין באפשרותנו לוודא נגישות מלאה של תכנים אלה</li>
-    </ul>
-
-    <h2>6. הסדרי נגישות בשירות לקוחות</h2>
-    <p>
-      בנוסף לנגישות הטכנית של האפליקציה, אנו מספקים את ההסדרים הבאים:
-    </p>
-    <ul>
-      <li>תמיכה במייל — מענה לכל הפניות, כולל בנושאי נגישות</li>
-      <li>זמן מענה לפניות בנושא נגישות — עד 48 שעות בימי עסקים</li>
-      <li>נכונות לבצע התאמות סבירות לפי בקשה אישית</li>
-    </ul>
-
-    <h2>7. דיווח על בעיות נגישות</h2>
-    <p>
-      אם נתקלת בבעיית נגישות באפליקציה, או יש לך הצעה לשיפור — נשמח לשמוע:
-    </p>
-    <div class="important-box">
-      <p>
-        <strong>פנייה בנושא נגישות:</strong><br>
-        📧 דוא"ל: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a><br>
-        📍 כתובת: דין צציס, אושיסקין 38, קרית מוצקין, ישראל
-      </p>
-      <p style="margin-top: 12px;">
-        <strong>בעת פנייה, אנא ציין:</strong>
-      </p>
-      <ul style="margin-bottom: 0;">
-        <li>תיאור הבעיה שנתקלת בה</li>
-        <li>המסך באפליקציה בו אירעה הבעיה</li>
-        <li>סוג המכשיר ומערכת ההפעלה</li>
-        <li>טכנולוגיית סיוע בה אתה משתמש (אם רלוונטי)</li>
-      </ul>
+    <div class="footer">
+      <p>הצהרת נגישות זו עודכנה לאחרונה ביום 03.08.2026.</p>
+      <p class="binding-note">התרגום לאנגלית ניתן לנוחות המשתמש בלבד. בכל מקרה של סתירה או אי-התאמה בין הנוסח העברי לבין התרגום, הנוסח העברי הוא המחייב.</p>
+      <p>© 2026 Wooof. כל הזכויות שמורות.</p>
     </div>
-
-    <h2>8. שיפור מתמיד</h2>
-    <p>
-      אנו מתחייבים להמשיך ולשפר את הנגישות באפליקציה באופן רציף:
-    </p>
-    <ul>
-      <li>בדיקות נגישות תקופתיות</li>
-      <li>שילוב משוב משתמשים</li>
-      <li>עדכון התאמות בכל גרסה חדשה</li>
-      <li>עדכון הצהרת נגישות זו בהתאם לשינויים</li>
-    </ul>
-
-    <h2>9. פטור והגבלות</h2>
-    <p>
-      בהתאם לחוק, ייתכנו תכונות מסוימות שאינן נגישות מלאות מסיבות טכנולוגיות. אנו פועלים להפחית את ההגבלות ככל הניתן ולמצוא פתרונות חלופיים.
-    </p>
-
-    <h2>10. דין חל</h2>
-    <p>
-      הצהרת נגישות זו כפופה לדין הישראלי, ובפרט לחוק שוויון זכויות לאנשים עם מוגבלות ולתקנות הנגישות לשירות.
-    </p>
-
-    <h2>11. עדכון ההצהרה</h2>
-    <p>
-      הצהרת נגישות זו עודכנה לאחרונה בתאריך <strong>17 ביוני 2026</strong>.
-      אנו עורכים בדיקה תקופתית של ההצהרה ומעדכנים אותה בהתאם לשינויים באפליקציה ובדרישות החוק.
-    </p>
-
   </div>
 
   <!-- ============ ENGLISH ============ -->
   <div class="content-en">
-
     <div class="header">
       <h1>Accessibility Statement</h1>
       <p class="meta">Wooof</p>
-      <p class="meta">Last Updated: June 17, 2026</p>
+      <p class="meta">Last updated: 03.08.2026</p>
     </div>
 
-    <h2>1. Our Commitment to Accessibility</h2>
-    <p>
-      <strong>Wooof</strong> is committed to providing an equal and accessible experience to all users, including people with disabilities.
-    </p>
-    <p>
-      We believe that everyone deserves simple and convenient access to our services — and we work continuously to ensure that our app meets legal requirements and standards in the field of accessibility.
-    </p>
+    <p>The platform operator (hereinafter: the "<strong>Operator</strong>") places importance on providing an equal, respectful, accessible and independent service to all users of the application, including people with disabilities.</p>
+    <p>The Operator acts on the premise that every person, regardless of their disability, should be able to enjoy a convenient and safe experience using the application's services, in accordance with the provisions of the law.</p>
 
-    <h2>2. Legal Background</h2>
-    <p>
-      This accessibility statement was prepared in accordance with:
-    </p>
-    <ul>
-      <li><strong>Israeli Equal Rights for People with Disabilities Law, 5758-1998</strong></li>
-      <li><strong>Equal Rights for People with Disabilities Regulations (Service Accessibility Adaptations), 5773-2013</strong></li>
-      <li><strong>Israeli Standard SI 5568</strong> — Web Content Accessibility</li>
-    </ul>
+    <ol>
+      <li>Accessibility adjustments were made in accordance with the recommendations of the Israeli Standard (SI 5568) for web content accessibility at level AA, which adopts the guidelines of the international WCAG 2.1 standard.</li>
+      <li>As part of making the application accessible, the following technological adjustments were implemented:
+        <ol>
+          <li>The application is adapted to work with common screen readers, including TalkBack on Android devices and VoiceOver on iOS devices. Text labels have been adapted for all buttons, fields and interactive elements.</li>
+          <li>The application supports changing font sizes according to the user's operating system settings, while maintaining the screen structure. In addition, proper contrast ratio between text and background was ensured.</li>
+          <li>The interface supports navigation using standard accessibility gestures and external keyboard navigation. The information hierarchy in the screens was built in a logical manner that allows easy and quick orientation.</li>
+          <li>Data entry fields (such as pet details, delivery address and contact details) include clear instructions, real-time error indication and auto-fill support where possible.</li>
+        </ol>
+      </li>
+    </ol>
 
-    <h2>3. Accessibility Level</h2>
-    <p>
-      We work to adapt the app to accessibility level <strong>AA</strong> according to the <strong>WCAG 2.1</strong> guidelines of the World Wide Web Consortium (W3C).
-    </p>
+    <h2>Accessibility Reservations and User Content</h2>
+    <ol start="3">
+      <li>The Operator makes efforts to make all parts of the application accessible. However, the user acknowledges that in the "Wanted" community space, user content is uploaded including images, free texts and location markers on a map, which are uploaded by third parties in real time.</li>
+      <li>Due to the nature of the user content, some of the information uploaded by users (such as alternative image description - Alt Text or accuracy in the verbal description) may not be fully or properly accessible.</li>
+      <li>The digital map component in the application is based on third-party services. Therefore, there may be accessibility limitations in the map component itself arising from the external provider's limitations.</li>
+    </ol>
 
+    <h2>Contact Details</h2>
+    <p>If you have encountered an accessibility difficulty, a component that is not sufficiently accessible, or if you would like to suggest an improvement, you are welcome to contact us in the following ways:</p>
     <div class="important-box">
-      <strong>Current Status:</strong>
-      <p>
-        The app supports basic accessibility features. We are working continuously to improve and expand the adaptations.
-      </p>
+      <p><strong>Name:</strong> Dean Tsatsis</p>
+      <p><strong>Phone:</strong> 050-6455090</p>
+      <p><strong>Email:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></p>
     </div>
 
-    <h2>4. Accessibility Features in the App</h2>
-
-    <h3>4.1 Screen Reader Support</h3>
-    <ul>
-      <li>Support for <strong>VoiceOver</strong> on iPhone and iPad devices</li>
-      <li>Support for <strong>TalkBack</strong> on Android devices</li>
-      <li>Labeling of interactive elements (buttons, links, input fields)</li>
-    </ul>
-
-    <h3>4.2 Navigation and Use</h3>
-    <ul>
-      <li>Minimum touch areas of 44×44 pixels (iOS) / 48×48 pixels (Android)</li>
-      <li>Consistent and clear navigation between screens</li>
-      <li>Clear and detailed error messages</li>
-    </ul>
-
-    <h3>4.3 Visual Adaptation</h3>
-    <ul>
-      <li>Color contrast according to WCAG AA standard (minimum ratio 4.5:1)</li>
-      <li>Support for font size changes at the operating system level</li>
-      <li>Clear and readable texts</li>
-    </ul>
-
-    <h3>4.4 Multi-Language Support</h3>
-    <ul>
-      <li>Full support for <strong>Hebrew</strong> (right-to-left direction)</li>
-      <li>Support for <strong>English</strong> (left-to-right direction)</li>
-      <li>Support for <strong>Russian</strong> (left-to-right direction)</li>
-    </ul>
-
-    <h2>5. Features That Are Not Fully Accessible</h2>
-    <p>
-      We are aware that there may be several features where accessibility is not yet complete. We are working to improve them continuously:
-    </p>
-    <ul>
-      <li>Some images in the app (product images) — extended text descriptions will be added in future updates</li>
-      <li>Listing content in the "Wanted" community is uploaded by end users — we cannot ensure full accessibility of this content</li>
-    </ul>
-
-    <h2>6. Customer Service Accessibility Arrangements</h2>
-    <p>
-      In addition to the technical accessibility of the app, we provide the following arrangements:
-    </p>
-    <ul>
-      <li>Email support — response to all inquiries, including accessibility matters</li>
-      <li>Response time for accessibility inquiries — up to 48 hours on business days</li>
-      <li>Willingness to make reasonable adaptations upon personal request</li>
-    </ul>
-
-    <h2>7. Reporting Accessibility Issues</h2>
-    <p>
-      If you encountered an accessibility issue in the app, or have a suggestion for improvement — we'd love to hear:
-    </p>
-    <div class="important-box">
-      <p>
-        <strong>Accessibility Inquiry:</strong><br>
-        📧 Email: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a><br>
-        📍 Address: Dean Tsatsis, 38 Ushishkin St., Kiryat Motzkin, Israel
-      </p>
-      <p style="margin-top: 12px;">
-        <strong>When contacting, please specify:</strong>
-      </p>
-      <ul style="margin-bottom: 0;">
-        <li>Description of the issue you encountered</li>
-        <li>The screen in the app where the issue occurred</li>
-        <li>Type of device and operating system</li>
-        <li>Assistive technology you are using (if relevant)</li>
-      </ul>
+    <div class="footer">
+      <p>This accessibility statement was last updated on 03.08.2026.</p>
+      <p class="binding-note">The English translation is provided for the user's convenience only. In any case of conflict or discrepancy between the Hebrew version and the translation, the Hebrew version shall prevail.</p>
+      <p>© 2026 Wooof. All rights reserved.</p>
     </div>
-
-    <h2>8. Continuous Improvement</h2>
-    <p>
-      We are committed to continuing to improve accessibility in the app:
-    </p>
-    <ul>
-      <li>Periodic accessibility audits</li>
-      <li>Integration of user feedback</li>
-      <li>Updates of adaptations in every new version</li>
-      <li>Updating this accessibility statement according to changes</li>
-    </ul>
-
-    <h2>9. Exemptions and Limitations</h2>
-    <p>
-      In accordance with the law, there may be certain features that are not fully accessible for technological reasons. We work to reduce limitations as much as possible and find alternative solutions.
-    </p>
-
-    <h2>10. Governing Law</h2>
-    <p>
-      This accessibility statement is subject to Israeli law, and in particular the Equal Rights for People with Disabilities Law and the Service Accessibility Regulations.
-    </p>
-
-    <h2>11. Statement Update</h2>
-    <p>
-      This accessibility statement was last updated on <strong>June 17, 2026</strong>.
-      We conduct a periodic review of the statement and update it according to changes in the app and legal requirements.
-    </p>
-
   </div>
-
-  <div class="footer">
-    <p>
-      © 2026 Wooof. כל הזכויות שמורות. | All rights reserved.
-    </p>
-  </div>
-
 </div>
 
 <script>
@@ -423,13 +142,10 @@
     document.body.setAttribute('data-lang', lang);
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
     window.scrollTo(0, 0);
   }
 </script>
-
 </body>
 </html>

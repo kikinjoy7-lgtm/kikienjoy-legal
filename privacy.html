@@ -4,547 +4,255 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>מדיניות פרטיות | Privacy Policy — Wooof</title>
-<!-- TODO (post-incorporation): Once a registered company exists (planned
-     entity: Kiki enJoy Ltd., which will operate the Wooof service), add
-     the operating-entity subtitle in section 1 (HE + EN) where legally
-     appropriate. The service is currently operated by a sole proprietor
-     (עוסק מורשה); no Ltd./Company/חברה language about the operator must
-     appear until then.
-     Note: existing references to "Hippopotamus Ltd." / "חברת היפופוטם בע"מ"
-     are about the product supplier (an unrelated third party) and are
-     correct as-is. -->
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: #f9fafb;
-    color: #1f2937;
+    background: #F6F7F6;
+    color: #2C2C2A;
     line-height: 1.7;
     padding: 24px 16px;
   }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  .header {
-    border-bottom: 3px solid #0A7A5C;
-    padding-bottom: 20px;
-    margin-bottom: 32px;
-  }
-  .lang-toggle {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-    justify-content: flex-end;
-  }
-  .lang-btn {
-    padding: 8px 16px;
-    border: 1px solid #d1d5db;
-    background: white;
-    color: #6b7280;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s;
-  }
-  .lang-btn.active {
-    background: #4CD9AC;
-    color: #08312A;
-    border-color: #4CD9AC;
-  }
-  h1 {
-    color: #0A7A5C;
-    font-size: 28px;
-    margin-bottom: 8px;
-  }
-  h2 {
-    color: #0A7A5C;
-    font-size: 20px;
-    margin-top: 28px;
-    margin-bottom: 12px;
-  }
-  h3 {
-    color: #1f2937;
-    font-size: 16px;
-    margin-top: 16px;
-    margin-bottom: 8px;
-  }
-  p, li {
-    color: #374151;
-    margin-bottom: 12px;
-  }
-  ul, ol {
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 12px;
-  }
-  ul[dir="ltr"], ol[dir="ltr"] {
-    margin-right: 24px;
-    margin-left: 24px;
-  }
-  li { margin-bottom: 6px; }
-  .meta {
-    color: #6b7280;
-    font-size: 14px;
-    margin-bottom: 4px;
-  }
-  .draft-notice {
-    background: #fef3c7;
-    border: 1px solid #f59e0b;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 24px;
-    font-size: 14px;
-    color: #92400e;
-  }
+  .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px 32px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+  .header { border-bottom: 3px solid #065F46; padding-bottom: 20px; margin-bottom: 32px; }
+  .lang-toggle { display: flex; gap: 8px; margin-bottom: 16px; justify-content: flex-end; }
+  .lang-btn { padding: 8px 16px; border: 1px solid #d1d5db; background: white; color: #6b7280; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; }
+  .lang-btn.active { background: #4CD9AC; color: #08312A; border-color: #4CD9AC; }
+  h1 { color: #065F46; font-size: 28px; margin-bottom: 8px; }
+  h2 { color: #065F46; font-size: 20px; margin-top: 28px; margin-bottom: 12px; }
+  h3 { color: #2C2C2A; font-size: 16px; margin-top: 16px; margin-bottom: 8px; }
+  p, li { color: #2C2C2A; margin-bottom: 12px; }
+  ul, ol { margin-right: 24px; margin-left: 24px; margin-bottom: 12px; }
+  li { margin-bottom: 8px; }
+  .meta { color: #6E6E6E; font-size: 14px; margin-bottom: 4px; }
+  .important-box { background: #E7FAF4; border: 1px solid #065F46; border-radius: 8px; padding: 16px; margin: 16px 0; }
+  .important-box p { margin-bottom: 6px; }
+  .highlight { font-weight: 700; }
   .content-en { display: none; }
   body[data-lang="en"] .content-he { display: none; }
   body[data-lang="en"] .content-en { display: block; }
   body[data-lang="en"] { direction: ltr; }
   body[data-lang="en"] .container { text-align: left; }
-  .footer {
-    margin-top: 32px;
-    padding-top: 20px;
-    border-top: 1px solid #e5e7eb;
-    color: #6b7280;
-    font-size: 14px;
-  }
-  a { color: #0A7A5C; text-decoration: none; }
+  body[data-lang="en"] ul, body[data-lang="en"] ol { margin-left: 24px; margin-right: 24px; }
+  .footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6E6E6E; font-size: 14px; }
+  .binding-note { font-style: italic; color: #555555; margin: 8px 0; }
+  a { color: #065F46; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  @media (max-width: 600px) {
-    .container { padding: 24px 16px; }
-    h1 { font-size: 22px; }
-    h2 { font-size: 18px; }
-  }
+  @media (max-width: 600px) { .container { padding: 24px 16px; } h1 { font-size: 22px; } h2 { font-size: 18px; } }
 </style>
 </head>
 <body data-lang="he">
 <div class="container">
-
   <div class="lang-toggle">
     <button class="lang-btn active" onclick="setLang('he')">עברית</button>
     <button class="lang-btn" onclick="setLang('en')">English</button>
   </div>
 
-  <div class="draft-notice">
-    ⚠️ <strong>טיוטה</strong> — המסמך מצוי בבדיקה משפטית. גרסה סופית תפורסם לפני השקה רשמית של השירות.
-  </div>
-
   <!-- ============ HEBREW ============ -->
   <div class="content-he">
-
     <div class="header">
       <h1>מדיניות פרטיות</h1>
       <p class="meta">Wooof</p>
-      <p class="meta">תאריך עדכון אחרון: 17 ביוני 2026</p>
+      <p class="meta">עודכן לאחרונה: 03.08.2026</p>
     </div>
 
-    <h2>1. מבוא</h2>
-    <p>
-      ברוכים הבאים לאפליקציית <strong>Wooof</strong> (להלן: "האפליקציה" או "השירות").
-      האפליקציה מופעלת על ידי <strong>דין צציס</strong>, מרחוב אושיסקין 38, קרית מוצקין, ישראל (להלן: "אנו", "אנחנו" או "המפעיל").
-    </p>
-    <p>
-      אנו מכבדים את פרטיות המשתמשים שלנו ומחויבים להגן עליה.
-      מדיניות פרטיות זו מסבירה איזה מידע אנו אוספים, כיצד אנו משתמשים בו ואילו זכויות יש לך בקשר אליו.
-    </p>
-    <p>
-      <strong>השימוש באפליקציה מהווה הסכמה למדיניות זו.</strong> אם אינך מסכים — אנא הפסק את השימוש באפליקציה.
-    </p>
+    <h2>מבוא, והסכמה למדיניות הפרטיות</h2>
+    <p>1.1. מדיניות פרטיות זו (להלן: <strong>"המדיניות"</strong>) מסדירה את האופן שבו דין צציס (להלן: <strong>"מפעיל הפלטפורמה"</strong> או <strong>"החברה"</strong>) אוסף, משתמש, שומר, מעבד את המידע המתקבל מהמשתמשים (להלן: <strong>"המשתמש"</strong> או <strong>"אתה"</strong>) במסגרת הגישה והשימוש באפליקציית Wooof (להלן: <strong>"האפליקציה"</strong>).</p>
+    <p>1.2. המדיניות חלה על השימוש באפליקציה בכל תצורותיה ופלטפורמות ההפצה שלה, לרבות אך לא רק: (א) יישומוני המובייל המופצים וזמינים להורדה בחנויות האפליקציות הרשמיות - App Store (של חברת Apple) ו-Google Play (של חברת Google). (ב) כל שירות, תוכן, פונקציונליות או רכיב טכנולוגי הנלווה לאפליקציה או המוטמע בה.</p>
 
-    <h2>2. מי אנחנו ומה השירות</h2>
-    <p>
-      <strong>Wooof</strong> היא פלטפורמה דיגיטלית להזמנת מוצרים לבעלי חיים ולפרסום מודעות במסגרת קהילת "Wanted" (מודעות אבודים ומציאות).
-    </p>
-    <p>
-      המוצרים המוצגים באפליקציה מסופקים על ידי חברת <strong>היפופוטם בע"מ</strong>. השירותים של מכירה, סליקה, משלוח, חשבונית ואחריות על המוצרים מבוצעים ישירות על ידי חברת היפופוטם בע"מ.
-    </p>
+    <h3>הסכמה למדיניות הפרטיות</h3>
+    <p>1.3. עצם הכניסה לאפליקציה, הגלישה בה, הורדתה, התקנתה או השימוש בשירותים המוצעים בה, מהווים הסכמה מלאה, מפורשת ומדעת של המשתמש לכל התנאים המפורטים במדיניות זו. המשתמש מאשר כי קרא והבין את המדיניות וכי הוא מסכים לפרקטיקות איסוף המידע, עיבודו, אחסונו והעברתו כפי שהן מתוארות להלן.</p>
+    <p>1.4. יובהר, כי לא חלה על המשתמש כל חובה חוקית למסור לחברה מידע כלשהו. מסירת המידע מתבצעת מרצונו החופשי של המשתמש ובהסכמתו המלאה לצורך קבלת השירותים. ככל שהמשתמש אינו מסכים לאיזה מתנאי המדיניות, עליו לחדול לאלתר מכל שימוש באפליקציה ולהסירה ממכשירו.</p>
+    <p>1.5. ידוע למשתמש כי אינו מחויב על פי דין למסור את המידע המפורט לעיל, אולם מסירת המידע מהווה תנאי הכרחי לשימוש בשירותי האפליקציה, כולם או חלקם. אי-מסירת מידע מסוים (כגון כתובת למשלוח או נתוני בעל החיים) תמנע את היכולת לבצע הזמנות או לקבל המלצות מותאמות אישית, בהתאמה.</p>
 
-    <h2>3. גיל מינימום</h2>
-    <p>
-      השימוש באפליקציה מותר אך ורק לבני <strong>18 ומעלה</strong>.
-      אם אתה מתחת לגיל 18, אינך רשאי להשתמש בשירות.
-    </p>
+    <h2>סוגי המידע הנאספים ואופן איסופם</h2>
+    <p>המידע הנאסף והמעובד על ידי החברה נחלק לקטגוריות הבאות:</p>
 
-    <h2>4. מידע שאנו אוספים</h2>
+    <h3>מידע הנמסר ביוזמת המשתמש:</h3>
+    <p>2.1.1. <strong>פרטי זיהוי והתקשרות:</strong> שם מלא, כתובת דואר אלקטרוני (המתקבלת באמצעות הרשמה ישירה או באמצעות ממשקי צד שלישי כגון Google או Apple), מספר טלפון וכתובת פיזית למשלוח המוצרים.</p>
+    <p>2.1.2. <strong>נתוני בעל החיים:</strong> מידע מפורט אודות בעל החיים שברשות המשתמש, לרבות סוג בעל החיים, גזעו, גילו, משקלו, תמונתו, וכן מידע רגיש הנוגע למצבו הבריאותי, כגון אלרגיות, רגישויות ומצבים רפואיים כרוניים או נקודתיים.</p>
+    <p>2.1.3. <strong>נתוני פעילות:</strong> היסטוריית הזמנות ורכישות, העדפות צריכה, יתרת "חטיפים" (קרדיטים) שנצברו ומימושם בפועל.</p>
+    <p>2.1.4. <strong>תכני קהילת "Wanted":</strong> מידע שהמשתמש בוחר לפרסם במרחב הקהילה, לרבות מודעות איתור או אימוץ, תמונות, תיאורים חופשיים ופרטי קשר המיועדים להצגה לציבור המשתמשים.</p>
+    <p>2.2. <strong>מידע טכני הנאסף באופן אוטומטי:</strong> בעת השימוש באפליקציה, נאסף מידע טכני אודות ציוד הקצה של המשתמש, לרבות סוג המכשיר, מערכת ההפעלה וגרסתה, גרסת האפליקציה המותקנת, מזהי מכשיר ייחודיים, נתוני שימוש, לוגים תפעוליים, ונתוני שגיאות.</p>
+    <p>2.3. <strong>נתוני תשלום:</strong> מובהר כי מפעיל הפלטפורמה אינו שומר במערכותיו את מספרי כרטיסי האשראי המלאים של המשתמשים. הליך הסליקה מבוצע באמצעות ספק סליקה חיצוני מוסמך, והאפליקציה שומרת אך ורק "אסימון" (Token) מוצפן המאפשר זיהוי העסקה מול הספק, וכן את 4 הספרות האחרונות של כרטיס האשראי לצורכי זיהוי ונוחות המשתמש בלבד.</p>
 
-    <h3>4.1 מידע שאתה מספק במהלך הרשמה</h3>
-    <ul>
-      <li>שם מלא</li>
-      <li>כתובת דוא"ל</li>
-      <li>מספר טלפון</li>
-      <li>סיסמה (מוצפנת ולא נצפית בידינו)</li>
-    </ul>
+    <h3>מידע הנמסר מעצם השימוש באפליקציה:</h3>
+    <p>בנוסף למידע הנמסר על ידי המשתמש באופן אקטיבי, מפעיל הפלטפורמה אוסף ומעבד מידע טכני הנאסף באופן אוטומטי מציוד הקצה של המשתמש בעת הגלישה והשימוש באפליקציה (להלן: <strong>"מידע טכני"</strong>). איסוף זה חיוני לצורך הבטחת תקינות השירות, אבטחת המידע, התאמת חוויית המשתמש ושיפור ביצועי המערכת.</p>
+    <p>2.4. המידע הטכני הנאסף כולל, בין היתר: מזהה ייחודי של המכשיר (UUID/UDID), כתובת IP, מזהי פרסום (כגון IDFA ב-iOS או AD-ID ב-Android) ומזהי התקנה ייחודיים, סוג מכשיר הקצה, דגם, יצרן, סוג מערכת ההפעלה וגרסתה, שפת המכשיר, הגדרות אזור זמן, וגרסת האפליקציה המותקנת, נתוני זרימת הקליקים, משך השהייה במסכים שונים, תדירות השימוש באפליקציה, ונתוני צריכת רוחב פס.</p>
+    <p>2.5. <strong>נתוני מיקום גאוגרפי:</strong> בכפוף למתן הרשאה על ידי המשתמש דרך הגדרות מערכת ההפעלה בציוד הקצה, האפליקציה עשויה לאסוף ולעבד נתוני מיקום גאוגרפי מדויקים (מבוססי GPS) או מקורבים (מבוססי רשתות Wi-Fi ונקודות גישה סלולריות).</p>
+    <p>המשתמש רשאי לבטל את הרשאת הגישה לנתוני המיקום בכל עת דרך הגדרות המכשיר, אולם מובהר כי ביטול כאמור עלול למנוע את היכולת לעשות שימוש בפונקציות מבוססות מיקום באפליקציה.</p>
+    <p>2.6. <strong>לוגים תפעוליים ודיווח על שגיאות:</strong> שרתי האפליקציה מתעדים באופן אוטומטי פעולות המבוצעות במערכת, לרבות מועדי כניסה ויציאה, שאילתות חיפוש, ונתוני עומסים על השרתים. במקרה של קריסת האפליקציה או שגיאה טכנית, עשוי להישלח דוח שגיאה אוטומטי, הכולל מידע על מצב המכשיר בעת התקלה, גרסת התוכנה ופרטי המערכת, וזאת לצורך איתור תקלות ושיפור יציבות המערכת.</p>
+    <p>2.7. <strong>טכנולוגיות מעקב ורכיבי צד שלישי (Cookies &amp; SDKs):</strong> האפליקציה עושה שימוש ב"עוגיות" (Cookies), מזהים מקומיים וטכנולוגיות דומות לצורך זיהוי המשתמש, שמירת העדפותיו (כגון פריטים בעגלת הקניות) ומניעת הצורך בהתחברות חוזרת בכל כניסה. כמו כן, האפליקציה מטמיעה רכיבי תוכנה מובנים של ספקים שלישיים (Software Development Kits SDKs) לצורך ניתוח אנליטי ואופטימיזציה. רכיבים אלו עשויים לאסוף מידע אודות פעילות המשתמש ולהעבירו לספקים השלישיים (כגון Google Analytics for Firebase, Meta SDK וכיוצא בזה). המידע הנאסף באמצעות ה-SDKs משמש לניתוח דפוסי שימוש, מדידת אפקטיביות של קמפיינים פרסומיים והתאמת תכנים אישיים למשתמש.</p>
 
-    <h3>4.2 מידע במהלך ביצוע הזמנה</h3>
-    <ul>
-      <li>כתובת למשלוח (עיר, רחוב, מספר, דירה, קומה)</li>
-      <li>מספר טלפון ליצירת קשר</li>
-      <li>פרטי הזמנה (מוצרים, כמויות, סכומים)</li>
-    </ul>
+    <ol start="3">
+      <li>מפעיל הפלטפורמה יעבד את המידע למטרות הבאות (להלן: <strong>"מטרות העיבוד"</strong>):
+        <ol>
+          <li>מתן השירותים המפורטים בתנאי השימוש, לרבות תפעול שוטף של האפליקציה וניהול חשבון המשתמש.</li>
+          <li>הפעלת מנגנון ההמלצות הממוחשב להתאמת מוצרי מזון וציוד לבעלי חיים על בסיס הנתונים שהוזנו.</li>
+          <li>ניהול היבטים לוגיסטיים ומסחריים, לרבות עיבוד הזמנות, תיאום משלוחים וניהול מועדון הקרדיטים ("חטיפים").</li>
+          <li>תפעול וניהול מרחב קהילת "Wanted" לסיוע באיתור בעלי חיים ובקידום אימוץ.</li>
+          <li>שיפור חוויית המשתמש, ניתוח סטטיסטי של דפוסי שימוש וייעול הממשקים הטכנולוגיים.</li>
+          <li>הפניית המשתמש לשירותים קרובים, נקודות חלוקה או מבצעים מקומיים של הספק.</li>
+          <li>אבטחת המערכות, מניעת הונאות, התגוננות מפני שימוש לרעה באפליקציה ועמידה בדרישות הדין.</li>
+          <li>ייעול מערך המשלוחים והלוגיסטיקה של הספק.</li>
+          <li>עמידה בחובות משפטיות החלות על החברה, לרבות דרישות דיווח לרשויות, ניהול ספרים וציות לצווים שיפוטיים.</li>
+          <li>מתן שירות, תמיכה, מענה לפניות ובקשות משתמשים.</li>
+          <li>שליחת הודעות מערכת ותפעול (כגון: עדכוני סטטוס הזמנה, התראות, שינוי תנאים וכדומה).</li>
+          <li>שליחת דברי פרסומת ושיווק ישיר, לפי סעיף 30א לחוק התקשורת (בזק ושידורים), התשמ"ב-1982.</li>
+        </ol>
+      </li>
+      <li>יצוין, כי עיבוד מידע הנוגע למצבו הבריאותי של בעל החיים (כגון אלרגיות ומחלות) מבוצע על בסיס הסכמתו המפורשת של המשתמש, הניתנת בעת הזנת נתונים אלו לצורך קבלת המלצות תזונתיות מותאמות. המשתמש רשאי למחוק נתונים אלו בכל עת דרך הגדרות הפרופיל, אולם מובהר כי הדבר יגרע מיכולת המערכת לספק המלצות רלוונטיות.</li>
+    </ol>
 
-    <h3>4.3 מידע במהלך פרסום מודעה בקהילת Wanted</h3>
-    <ul>
-      <li>מיקום גיאוגרפי (GPS) — לציון מיקום מודעה (רשות)</li>
-      <li>תמונות שאתה מעלה</li>
-      <li>תוכן המודעה</li>
-    </ul>
+    <h2>העברת מידע לצדדים שלישיים, דיוור ישיר והתראות Push</h2>
+    <ol start="5">
+      <li>מפעיל הפלטפורמה אינו מוכר, משכיר או סוחר במידע אישי אודות המשתמשים לצדדים שלישיים, אלא כפי שפורט לעיל. המידע האישי יועבר לצדדים שלישיים אך ורק לצורך הגשמת מטרות העיבוד, ובמידה הנדרשת לביצוע השירותים המבוקשים על ידי המשתמש.</li>
+      <li><strong>העברת מידע לחברת היפופוטם בע"מ:</strong> לצורך ביצוע עסקאות הרכישה, אספקת המוצרים ומתן שירות הלקוחות, מפעיל הפלטפורמה יעביר את המידע הרלוונטי (לרבות שם, טלפון, כתובת למשלוח, פרטי הזמנה ונתוני בעל החיים הרלוונטיים לרכישה) לחברת היפופוטם בע"מ (ח.פ. 513311076) (להלן: <strong>"הספק"</strong>). המשתמש מאשר כי הספק פועל כ"בעל מאגר מידע" עצמאי ביחס למידע המועבר אליו לצורך ניהול המכירה, הסליקה, הפקת החשבוניות והמשלוח. השימוש במידע על ידי הספק יהיה כפוף למדיניות הפרטיות של הספק ולהוראות הדין החלות עליו.</li>
+      <li><strong>חנויות האפליקציות (App Store ו-Google Play):</strong> בעת הפצת האפליקציה באמצעות חנויות אלו, מידע טכני הנוגע להורדת היישומון, עדכונו וביצועיו משותף עם מפעילי החנויות (Apple ו-Google). הורדת האפליקציה כפוף למדיניות הפרטיות של הספקים הנ"ל, ולהוראות הדין החלות עליהם.</li>
+      <li><strong>העברת מידע לספקי תשתית ושירותים (מעבדי מידע):</strong> מפעיל הפלטפורמה נעזר בספקי שירותים חיצוניים לצורך תפעול האפליקציה, ואלו עשויים להיחשף למידע אישי במסגרת תפקידם כ"מחזיקים" כהגדרתם בחוק הגנת הפרטיות, התשמ"א-1981:
+        <ol>
+          <li>Supabase: שירותי ענן, אחסון בסיסי נתונים ותשתית טכנולוגית. המידע האישי של המשתמשים מאוחסן בשרתי Supabase.</li>
+          <li>Expo: שירות המאפשר משלוח התראות Push למכשירי המשתמשים. לצורך כך, מזהה מכשיר ייחודי (Token) עשוי להיות מועבר לספק זה.</li>
+          <li>Tranzila: ספק סליקה חיצוני המעבד את נתוני התשלום. כפי שפורט בפרק א', המידע המלא של כרטיס האשראי מועבר ישירות לספק הסליקה ואינו נשמר במערכות המפעיל.</li>
+          <li>ספקי משלוחים: פרטי המשתמש (שם, כתובת וטלפון) יועברו לחברות שליחויות המועסקות על ידי הספק או המפעיל לצורך ביצוע האספקה הפיזית.</li>
+        </ol>
+      </li>
+      <li><strong>העברת מידע מחוץ לגבולות ישראל:</strong> המשתמש מאשר כי חלק מספקי השירותים (כגון Supabase ו-Expo) מחזיקים את המידע בשרתים הממוקמים מחוץ לגבולות מדינת ישראל (לרבות בארה"ב או באיחוד האירופי).</li>
+      <li><strong>דיוור ישיר והודעות פרסומיות:</strong> בכפוף לקבלת הסכמתו של המשתמש, מפעיל הפלטפורמה יהיה רשאי לשלוח למשתמש הודעות פרסומיות, עדכונים, מבצעים והצעות שיווקיות באמצעות דואר אלקטרוני, מסרונים (SMS) או הודעות. המשתמש רשאי לחזור בו מהסכמתו לקבלת דברי פרסומת בכל עת, באמצעות לחיצה על קישור "הסר" המופיע בגוף ההודעה או באמצעות פנייה בכתב למפעיל בדרכי ההתקשרות המפורטות במדיניות זו.</li>
+      <li><strong>התראות Push:</strong> האפליקציה עושה שימוש בהתראות Push לצורך עדכונים תפעוליים (כגון סטטוס הזמנה) וכן לצורך עדכונים שיווקיים. המשתמש יכול לשלוט בהגדרות קבלת ההתראות דרך תפריט ההגדרות במכשיר הקצה שלו או דרך הגדרות האפליקציה. מובהר כי ביטול התראות Push עלול לפגוע ביכולת המשתמש לקבל עדכונים בזמן אמת אודות הזמנותיו.</li>
+      <li><strong>העברת מידע מכוח חובה חוקית או אירוע תאגידי:</strong> מפעיל הפלטפורמה יהיה רשאי להעביר מידע לצדדים שלישיים גם במקרים הבאים: מכוח צו שיפוטי או דרישה של רשות מוסמכת על פי דין, במסגרת הליכים משפטיים או מחלוקת בין המשתמש לבין המפעיל או הספק, או במקרה של שינוי מבני במפעיל הפלטפורמה (כגון מיזוג, רכישה או מכירת פעילות), ובלבד שהישות הקולטת תקבל על עצמה את הוראות מדיניות פרטיות זו כלפי המשתמשים.</li>
+    </ol>
 
-    <h3>4.4 התחברות באמצעות Google / Apple</h3>
-    <p>
-      אם תבחר להתחבר באמצעות חשבון Google או Apple — נקבל מהשירותים הללו את שמך המלא וכתובת הדוא"ל שלך.
-    </p>
+    <h2>פרק ג': אבטחת מידע, תקופת שמירה, זכויות נושאי המידע, ושינויי מדיניות</h2>
+    <ol start="14">
+      <li>מפעיל הפלטפורמה מייחס חשיבות להגנה על המידע הנאסף ונוקט באמצעי אבטחה סבירים ומקובלים. לשם כך, מיושמים באפליקציה אמצעי הגנה טכנולוגיים וארגוניים, הכוללים בין היתר: 14.1. שימוש בפרוטוקולי הצפנה סטנדרטיים להעברת מידע (כגון TLS/SSL) ולאחסונו. 14.2. שימוש ברכיבי SecureStore, Apple Keychain ו-Android Keystore לשמירה מאובטחת של מפתחות הצפנה ופרטי גישה (Tokens) על גבי מכשיר המשתמש. 14.3. יישום מנגנון Row Level Security (RLS) בתשתית Supabase, המבטיח כי כל משתמש יוכל לגשת אך ורק למידע השייך לו או למידע שהורשה לצפות בו.</li>
+      <li>המשתמש מאשר ומסכים כי על אף אמצעי האבטחה הננקטים, אין ביכולתו של מפעיל הפלטפורמה להבטיח חסינות מוחלטת של המידע מפני חדירה בלתי מורשית, תקלות טכניות, תקיפות סייבר או טעויות אנוש. מבלי לגרוע מן האמור, המשתמש נושא באחריות הבלעדית לאבטחת מכשיר הקצה שלו, לרבות התקנת עדכוני תוכנה ואמצעי הגנה נגד וירוסים ותוכנות מזיקות, אשר עשויים להשפיע על פרטיותו בעת השימוש באפליקציה.</li>
+      <li><strong>תקופת שמירת המידע:</strong> המידע האישי יישמר במערכות המפעיל למשך התקופה הנדרשת לצורך הגשמת מטרות העיבוד המפורטות במדיניות זו, או למשך תקופה ארוכה יותר ככל שנדרש לצורך עמידה בחובות משפטיות (כגון שמירת מסמכים חשבונאיים למשך 7 שנים), הגנה על זכויות משפטיות של המפעיל או פתרון מחלוקות. מידע המפורסם במרחב קהילת "Wanted" יישמר עד להסרתו על ידי המשתמש או עד לסגירת המודעה, בכפוף לזכות המפעיל לשמור עותק ארכיוני לצרכים תפעוליים או משפטיים. בתום התקופה הנדרשת, המפעיל יפעל למחיקת המידע האישי או לביצוע אנונימיזציה (התממה), כך שלא ניתן יהיה עוד לזהות את המשתמש מהנתונים הנותרים.</li>
+      <li><strong>זכות העיון:</strong> המשתמש זכאי לעיין במידע עליו המוחזק במאגר המידע של המפעיל, בעצמו או באמצעות בא כוחו שהורשה בכתב.</li>
+      <li><strong>תיקון ומחיקה של מידע:</strong> ככל שהמשתמש מצא כי המידע עליו אינו נכון, אינו שלם, אינו ברור או אינו מעודכן, הוא רשאי לפנות לבעל מאגר המידע בבקשה לתקן את המידע או למחקו.</li>
+      <li><strong>זכות למחיקת חשבון:</strong> המשתמש רשאי לבקש בכל עת את מחיקת חשבונו באפליקציה. מובהר כי מחיקת החשבון תוביל למחיקת המידע האישי המזוהה, למעט מידע שהמפעיל מחויב לשמור על פי דין או לצורך אינטרסים לגיטימיים כאמור במדיניות פרטיות זו.</li>
+      <li>לצורך מימוש זכויותיו, על המשתמש לשלוח פנייה אצל המפעיל, לכתובת הדואר האלקטרוני: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a>. המפעיל יבחן את הפנייה וישיב עליה בתוך פרק הזמן הקבוע בחוק. לצורך זיהוי המשתמש ומניעת חשיפת מידע לגורמים בלתי מורשים, המפעיל רשאי לדרוש מהמשתמש פרטים או מסמכים מזהים נוספים בטרם מתן מענה לפנייה.</li>
+      <li><strong>שינויים במדיניות הפרטיות:</strong> מפעיל הפלטפורמה רשאי לעדכן או לשנות את הוראות מדיניות פרטיות זו מעת לעת, לפי שיקול דעתו הבלעדי, בין היתר עקב שינויים טכנולוגיים, עדכוני גרסה באפליקציה או שינויים בדרישות הדין. במקרה של שינוי מהותי בהוראות המדיניות (כגון שינוי במטרות העיבוד או העברת מידע לצדדים שלישיים חדשים), המפעיל יפרסם הודעה באפליקציה או ישלח הודעה למשתמשים בדואר אלקטרוני. המשך השימוש באפליקציה לאחר פרסום המדיניות המעודכנת מהווה הסכמה של המשתמש לשינויים. המדיניות העדכנית ביותר תהיה זמינה בכל עת דרך תפריט ההגדרות באפליקציה.</li>
+    </ol>
 
-    <h3>4.5 מידע שלא אנו אוספים</h3>
-    <p>
-      <strong>אנו אינם משתמשים ב:</strong>
-    </p>
-    <ul>
-      <li>קוקיות שיווקיות (Marketing Cookies)</li>
-      <li>פיקסלים של רשתות חברתיות (Facebook Pixel, Google Analytics וכו')</li>
-      <li>כלי מעקב חיצוניים</li>
-      <li>תוויות פרסום (Advertising Identifiers)</li>
-    </ul>
+    <h2>פרטי יצירת קשר</h2>
+    <p>22. בכל שאלה, הבהרה או תלונה בנוגע למדיניות פרטיות זו או לאופן הטיפול במידע האישי, ניתן לפנות למפעיל הפלטפורמה בדרכים הבאות:</p>
+    <div class="important-box">
+      <p><strong>דואר אלקטרוני:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></p>
+      <p><strong>פנייה דרך טופס "צור קשר" באפליקציה.</strong></p>
+    </div>
 
-    <h2>5. שימוש במידע</h2>
-    <p>אנו משתמשים במידע שלך אך ורק למטרות הבאות:</p>
-    <ul>
-      <li>אספקת שירותי האפליקציה (הצגת קטלוג, הזמנות, מודעות)</li>
-      <li>העברת פרטי הזמנה לחברת היפופוטם בע"מ לצורך משלוח וסליקה</li>
-      <li>שליחת מיילי אישור על הזמנות ועדכוני סטטוס</li>
-      <li>שליחת התראות באפליקציה (Push Notifications) על הזמנות</li>
-      <li>תמיכה טכנית ושירות לקוחות</li>
-      <li>שיפור השירות</li>
-      <li>עמידה בדרישות חוקיות</li>
-    </ul>
-    <p>
-      <strong>אנו אינם שולחים שיווק בדוא"ל.</strong> תקבל ממנו רק מיילים תפעוליים (אישור הזמנה, עדכון סטטוס וכו').
-    </p>
-
-    <h2>6. שיתוף מידע עם צד שלישי</h2>
-    <p>אנו משתפים מידע אך ורק עם השירותים הבאים, ולמטרות תפעוליות בלבד:</p>
-
-    <h3>6.1 היפופוטם בע"מ</h3>
-    <p>
-      <strong>מטרה:</strong> ביצוע הזמנה, סליקה, משלוח ושירות לאחר מכירה.<br>
-      <strong>מידע שמועבר:</strong> שם, כתובת משלוח, מספר טלפון, פרטי הזמנה.
-    </p>
-
-    <h3>6.2 Supabase (אחסון מידע)</h3>
-    <p>
-      <strong>מטרה:</strong> בסיס נתונים מאובטח ושירותי הזדהות (Authentication).<br>
-      <strong>מידע:</strong> כל המידע המופיע באפליקציה מאוחסן בשרתים מאובטחים של Supabase.<br>
-      <a href="https://supabase.com/privacy" target="_blank">מדיניות הפרטיות של Supabase</a>
-    </p>
-
-    <h3>6.3 Resend (משלוח דוא"ל)</h3>
-    <p>
-      <strong>מטרה:</strong> משלוח מיילי אישור הזמנה ועדכוני סטטוס.<br>
-      <strong>מידע:</strong> כתובת דוא"ל ופרטי הזמנה.<br>
-      <a href="https://resend.com/privacy" target="_blank">מדיניות הפרטיות של Resend</a>
-    </p>
-
-    <h3>6.4 Expo (פלטפורמת אפליקציה)</h3>
-    <p>
-      <strong>מטרה:</strong> תשתית אפליקציה והתראות Push.<br>
-      <strong>מידע:</strong> Push Token של המכשיר.<br>
-      <a href="https://expo.dev/privacy" target="_blank">מדיניות הפרטיות של Expo</a>
-    </p>
-
-    <h3>6.5 Google (Sign-In)</h3>
-    <p>
-      <strong>מטרה:</strong> אפשרות התחברות נוחה.<br>
-      <strong>מידע:</strong> רק אם בחרת להתחבר עם Google — שם וכתובת דוא"ל.<br>
-      <a href="https://policies.google.com/privacy" target="_blank">מדיניות הפרטיות של Google</a>
-    </p>
-
-    <h3>6.6 Apple (Sign-In)</h3>
-    <p>
-      <strong>מטרה:</strong> אפשרות התחברות נוחה במכשירי iOS.<br>
-      <strong>מידע:</strong> רק אם בחרת להתחבר עם Apple — שם וכתובת דוא"ל.<br>
-      <a href="https://www.apple.com/legal/privacy/" target="_blank">מדיניות הפרטיות של Apple</a>
-    </p>
-
-    <h3>6.7 Cloudflare (אחסון אדמין)</h3>
-    <p>
-      <strong>מטרה:</strong> אחסון ממשק ניהול פנימי של החברה.<br>
-      <strong>מידע:</strong> אינו נוגע בלקוחות באופן ישיר.
-    </p>
-
-    <p>
-      <strong>אנו לא מוכרים את המידע שלך לאף גורם שלישי, בשום מקרה.</strong>
-    </p>
-
-    <h2>7. אבטחת מידע</h2>
-    <p>אנו נוקטים באמצעי אבטחה סבירים להגנת המידע שלך:</p>
-    <ul>
-      <li>הצפנת תקשורת (HTTPS/TLS)</li>
-      <li>הצפנת סיסמאות (Hashing)</li>
-      <li>הגנת בסיס נתונים ברמת השורה (RLS — Row Level Security)</li>
-      <li>גיבויים סדירים</li>
-      <li>הגבלת גישה לעובדים מורשים בלבד</li>
-    </ul>
-    <p>
-      עם זאת, אנחנו לא יכולים להבטיח אבטחה מוחלטת. במקרה של פריצה משמעותית — תקבל התראה בהקדם האפשרי.
-    </p>
-
-    <h2>8. שמירת מידע</h2>
-    <p>
-      אנו שומרים את המידע שלך כל עוד יש לך חשבון פעיל. אם תחליט למחוק את החשבון — נמחק את המידע הזיהוי שלך תוך 30 ימים, למעט מידע שאנחנו חייבים לשמור על פי חוק (למשל, פרטי חשבוניות לפי פקודת מס הכנסה).
-    </p>
-
-    <h2>9. הזכויות שלך</h2>
-    <p>בהתאם לחוק הגנת הפרטיות הישראלי ול-GDPR האירופאי, יש לך הזכויות הבאות:</p>
-    <ul>
-      <li><strong>זכות גישה</strong> — לקבל עותק מהמידע שאנחנו מחזיקים עליך</li>
-      <li><strong>זכות תיקון</strong> — לתקן מידע שגוי</li>
-      <li><strong>זכות מחיקה</strong> — לבקש מחיקת המידע שלך</li>
-      <li><strong>זכות התנגדות</strong> — להתנגד לעיבוד מסוים של מידע</li>
-      <li><strong>זכות ניידות</strong> — לקבל את המידע בפורמט מובנה</li>
-    </ul>
-    <p>
-      למימוש הזכויות — צור איתנו קשר ב: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a>
-    </p>
-
-    <h2>10. ילדים מתחת לגיל 18</h2>
-    <p>
-      השירות לא מיועד לילדים מתחת לגיל 18. איננו אוספים ביודעין מידע מקטינים.
-      אם נודע לנו שאספנו מידע מקטין — נמחק אותו מיד.
-    </p>
-
-    <h2>11. שינויים במדיניות</h2>
-    <p>
-      אנו רשאים לעדכן את מדיניות הפרטיות מעת לעת. שינויים מהותיים יוצגו באפליקציה ויישלחו במייל. המשך השימוש לאחר עדכון מהווה הסכמה למדיניות החדשה.
-    </p>
-
-    <h2>12. יצירת קשר</h2>
-    <p>
-      לשאלות, הערות או בקשות בנוגע למדיניות פרטיות זו, צור קשר:
-    </p>
-    <ul>
-      <li><strong>דוא"ל:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></li>
-      <li><strong>כתובת:</strong> דין צציס, אושיסקין 38, קרית מוצקין, ישראל</li>
-    </ul>
-
-    <h2>13. דין חל וסמכות שיפוט</h2>
-    <p>
-      על מדיניות פרטיות זו יחול הדין הישראלי בלבד. סמכות השיפוט הייחודית בכל מחלוקת הקשורה למדיניות זו תהיה לבתי המשפט במחוז חיפה, ישראל.
-    </p>
-
+    <div class="footer">
+      <p>מדיניות פרטיות זו עודכנה לאחרונה ביום 03.08.2026.</p>
+      <p class="binding-note">התרגום לאנגלית ניתן לנוחות המשתמש בלבד. בכל מקרה של סתירה או אי-התאמה בין הנוסח העברי לבין התרגום, הנוסח העברי הוא המחייב.</p>
+      <p>© 2026 Wooof. כל הזכויות שמורות.</p>
+    </div>
   </div>
 
   <!-- ============ ENGLISH ============ -->
   <div class="content-en">
-
     <div class="header">
       <h1>Privacy Policy</h1>
       <p class="meta">Wooof</p>
-      <p class="meta">Last Updated: June 17, 2026</p>
+      <p class="meta">Last updated: 03.08.2026</p>
     </div>
 
-    <h2>1. Introduction</h2>
-    <p>
-      Welcome to the <strong>Wooof</strong> application (the "App" or "Service").
-      The App is operated by <strong>Dean Tsatsis</strong>, of 38 Ushishkin St., Kiryat Motzkin, Israel ("we", "us", or "Operator").
-    </p>
-    <p>
-      We respect the privacy of our users and are committed to protecting it.
-      This Privacy Policy explains what information we collect, how we use it, and what rights you have regarding it.
-    </p>
-    <p>
-      <strong>Use of the App constitutes your agreement to this policy.</strong> If you do not agree — please discontinue use.
-    </p>
+    <div class="important-box">
+      <p>This is a convenience translation of the Hebrew Privacy Policy. The full, legally binding text is the Hebrew version available via the language toggle above. In any case of conflict or discrepancy between the Hebrew version and this translation, the Hebrew version shall prevail.</p>
+    </div>
 
-    <h2>2. About Us and the Service</h2>
-    <p>
-      <strong>Wooof</strong> is a digital platform for ordering pet products and posting community "Wanted" listings (lost and found pets).
-    </p>
-    <p>
-      Products displayed in the App are supplied by <strong>Hippopotamus Ltd.</strong> Services of sale, payment processing, shipping, invoicing, and product warranty are performed directly by Hippopotamus Ltd.
-    </p>
+    <h2>Introduction and Consent to the Privacy Policy</h2>
+    <p>1.1. This privacy policy (hereinafter: the <strong>"Policy"</strong>) regulates the manner in which Dean Tsatsis (hereinafter: the <strong>"Platform Operator"</strong> or the <strong>"Company"</strong>) collects, uses, stores and processes the information received from users (hereinafter: the <strong>"User"</strong> or <strong>"you"</strong>) in the context of accessing and using the Wooof application (hereinafter: the <strong>"Application"</strong>).</p>
+    <p>1.2. The Policy applies to the use of the application in all its configurations and distribution platforms, including but not limited to: (a) the mobile applications distributed and available for download in the official app stores - App Store (of Apple) and Google Play (of Google). (b) any service, content, functionality or technological component accompanying the application or embedded in it.</p>
 
-    <h2>3. Minimum Age</h2>
-    <p>
-      Use of the App is permitted only to persons aged <strong>18 and over</strong>.
-      If you are under 18, you may not use the Service.
-    </p>
+    <h3>Consent to the Privacy Policy</h3>
+    <p>1.3. The mere entry into the application, browsing it, downloading it, installing it or using the services offered in it, constitutes the user's full, express and knowing consent to all the terms detailed in this Policy. The user confirms that they have read and understood the Policy and that they agree to the practices of information collection, processing, storage and transfer as described below.</p>
+    <p>1.4. It shall be clarified that no legal obligation applies to the user to provide the Company with any information. The provision of information is done at the user's free will and with their full consent for the purpose of receiving the services. To the extent the user does not agree to any of the terms of the Policy, they must immediately cease all use of the application and remove it from their device.</p>
+    <p>1.5. The user is aware that they are not obligated by law to provide the information detailed above, however the provision of information constitutes a necessary condition for using the application's services, in whole or in part. The non-provision of certain information (such as a delivery address or pet data) will prevent the ability to place orders or receive personally tailored recommendations, respectively.</p>
 
-    <h2>4. Information We Collect</h2>
+    <h2>Types of Information Collected and the Manner of Their Collection</h2>
+    <p>The information collected and processed by the Company is divided into the following categories:</p>
 
-    <h3>4.1 Information You Provide During Registration</h3>
-    <ul>
-      <li>Full name</li>
-      <li>Email address</li>
-      <li>Phone number</li>
-      <li>Password (encrypted and not visible to us)</li>
-    </ul>
+    <h3>Information provided at the user's initiative:</h3>
+    <p>2.1.1. <strong>Identification and contact details:</strong> full name, email address (received through direct registration or through third-party interfaces such as Google or Apple), phone number and physical address for the delivery of the products.</p>
+    <p>2.1.2. <strong>Pet data:</strong> detailed information about the pet in the user's possession, including the type of pet, its breed, age, weight, its image, as well as sensitive information regarding its health condition, such as allergies, sensitivities and chronic or specific medical conditions.</p>
+    <p>2.1.3. <strong>Activity data:</strong> order and purchase history, consumption preferences, balance of "treats" (credits) accrued and their actual redemption.</p>
+    <p>2.1.4. <strong>"Wanted" community content:</strong> information that the user chooses to publish in the Community Space, including locating or adoption notices, images, free descriptions and contact details intended for display to the community of users.</p>
+    <p>2.2. <strong>Technical information collected automatically:</strong> during the use of the application, technical information is collected about the user's end device, including the device type, operating system and its version, the installed application version, unique device identifiers, usage data, operational logs, and error data.</p>
+    <p>2.3. <strong>Payment data:</strong> it is clarified that the platform operator does not store in its systems the full credit card numbers of the users. The clearing process is carried out through a qualified external clearing provider, and the application stores only an encrypted "token" (Token) that allows identification of the transaction with the provider, as well as the last 4 digits of the credit card for identification purposes and the user's convenience only.</p>
 
-    <h3>4.2 Information During Order Placement</h3>
-    <ul>
-      <li>Delivery address (city, street, number, apartment, floor)</li>
-      <li>Phone number for contact</li>
-      <li>Order details (products, quantities, amounts)</li>
-    </ul>
+    <h3>Information provided by the mere use of the application:</h3>
+    <p>In addition to the information provided by the user actively, the platform operator collects and processes technical information collected automatically from the user's end device during browsing and use of the application (hereinafter: <strong>"technical information"</strong>). This collection is essential for the purpose of ensuring the proper functioning of the service, information security, adapting the user experience and improving system performance.</p>
+    <p>2.4. The technical information collected includes, among others: a unique device identifier (UUID/UDID), IP address, advertising identifiers (such as IDFA on iOS or AD-ID on Android) and unique installation identifiers, end device type, model, manufacturer, operating system type and its version, device language, time zone settings, and installed application version, click-stream data, duration of stay on various screens, frequency of use of the application, and bandwidth consumption data.</p>
+    <p>2.5. <strong>Geographic location data:</strong> subject to permission being given by the user through the operating system settings on the end device, the application may collect and process precise geographic location data (GPS-based) or approximate (based on Wi-Fi networks and cellular access points).</p>
+    <p>The user may cancel the access permission to the location data at any time through the device settings, however it is clarified that such cancellation may prevent the ability to use location-based functions in the application.</p>
+    <p>2.6. <strong>Operational logs and error reporting:</strong> the application's servers automatically record actions performed in the system, including entry and exit times, search queries, and server load data. In the event of the application crashing or a technical error, an automatic error report may be sent, including information about the state of the device at the time of the malfunction, the software version and the system details, for the purpose of locating malfunctions and improving system stability.</p>
+    <p>2.7. <strong>Tracking technologies and third-party components (Cookies &amp; SDKs):</strong> the application makes use of "cookies" (Cookies), local identifiers and similar technologies for the purpose of identifying the user, saving their preferences (such as items in the shopping cart) and preventing the need to log in again on each entry. Also, the application embeds built-in software components of third-party providers (Software Development Kits SDKs) for the purpose of analytical analysis and optimization. These components may collect information about the user's activity and transfer it to the third-party providers (such as Google Analytics for Firebase, Meta SDK and the like). The information collected through the SDKs is used to analyze usage patterns, measure the effectiveness of advertising campaigns and adapt personal content to the user.</p>
 
-    <h3>4.3 Information When Posting in Wanted Community</h3>
-    <ul>
-      <li>Geographic location (GPS) — to mark listing location (optional)</li>
-      <li>Photos you upload</li>
-      <li>Listing content</li>
-    </ul>
+    <ol start="3">
+      <li>The platform operator will process the information for the following purposes (hereinafter: <strong>"the processing purposes"</strong>):
+        <ol>
+          <li>Providing the services detailed in the Terms of Use, including the ongoing operation of the application and management of the user account.</li>
+          <li>Operating the computerized recommendation mechanism for matching food products and equipment for pets based on the data entered.</li>
+          <li>Managing logistical and commercial aspects, including processing orders, coordinating deliveries and managing the credit club ("treats").</li>
+          <li>Operating and managing the "Wanted" community space to assist in locating pets and promoting adoption.</li>
+          <li>Improving the user experience, statistical analysis of usage patterns and streamlining the technological interfaces.</li>
+          <li>Referring the user to nearby services, distribution points or local promotions of the Supplier.</li>
+          <li>Securing the systems, preventing fraud, defending against misuse of the application and complying with the requirements of the law.</li>
+          <li>Streamlining the Supplier's delivery and logistics array.</li>
+          <li>Complying with legal obligations applicable to the Company, including reporting requirements to authorities, bookkeeping and compliance with judicial orders.</li>
+          <li>Providing service, support, and responding to user inquiries and requests.</li>
+          <li>Sending system and operational messages (such as: order status updates, notifications, changes to terms, etc.).</li>
+          <li>Sending advertising and direct marketing, in accordance with section 30A of the Communications Law (Telecommunications and Broadcasting), 5742-1982.</li>
+        </ol>
+      </li>
+      <li>It shall be noted that the processing of information regarding the pet's health condition (such as allergies and diseases) is carried out on the basis of the user's express consent, given at the time of entering this data for the purpose of receiving tailored nutritional recommendations. The user may delete this data at any time through the profile settings, however it is clarified that this will detract from the system's ability to provide relevant recommendations.</li>
+    </ol>
 
-    <h3>4.4 Sign-In via Google / Apple</h3>
-    <p>
-      If you choose to sign in via Google or Apple — we will receive your name and email address from those services.
-    </p>
+    <h2>Transfer of Information to Third Parties, Direct Marketing and Push Notifications</h2>
+    <ol start="5">
+      <li>The platform operator does not sell, rent or trade in personal information about users to third parties, except as detailed above. Personal information will be transferred to third parties only for the purpose of fulfilling the processing purposes, and to the extent required for carrying out the services requested by the user.</li>
+      <li><strong>Transfer of information to Hippopotam Ltd.:</strong> for the purpose of carrying out purchase transactions, supplying products and providing customer service, the platform operator will transfer the relevant information (including name, phone, delivery address, order details and pet data relevant to the purchase) to Hippopotam Ltd. (company no. 513311076) (hereinafter: the <strong>"Supplier"</strong>). The user confirms that the Supplier acts as an independent "database owner" with respect to the information transferred to it for the purpose of managing the sale, clearing, invoice issuance and delivery. The use of the information by the Supplier will be subject to the Supplier's privacy policy and the provisions of the law applicable to it.</li>
+      <li><strong>App stores (App Store and Google Play):</strong> when distributing the application through these stores, technical information regarding the download of the application, its update and its performance is shared with the store operators (Apple and Google). The download of the application is subject to the privacy policy of the aforementioned providers, and the provisions of the law applicable to them.</li>
+      <li><strong>Transfer of information to infrastructure and service providers (data processors):</strong> the platform operator uses external service providers for the purpose of operating the application, and these may be exposed to personal information within their role as "holders" as defined in the Protection of Privacy Law, 5741-1981:
+        <ol>
+          <li>Supabase: cloud services, database storage and technological infrastructure. The personal information of users is stored on Supabase servers.</li>
+          <li>Expo: a service that enables sending Push notifications to users' devices. For this purpose, a unique device identifier (Token) may be transferred to this provider.</li>
+          <li>Tranzila: an external clearing provider that processes the payment data. As detailed in Chapter A, the full credit card information is transferred directly to the clearing provider and is not stored in the Operator's systems.</li>
+          <li>Delivery providers: the user's details (name, address and phone) will be transferred to courier companies employed by the Supplier or the Operator for the purpose of carrying out the physical supply.</li>
+        </ol>
+      </li>
+      <li><strong>Transfer of information outside the borders of Israel:</strong> the user confirms that some of the service providers (such as Supabase and Expo) hold the information on servers located outside the borders of the State of Israel (including in the USA or the European Union).</li>
+      <li><strong>Direct marketing and advertising messages:</strong> subject to obtaining the user's consent, the platform operator will be entitled to send the user advertising messages, updates, promotions and marketing offers by email, text messages (SMS) or messages. The user may withdraw their consent to receiving advertising at any time, by clicking on the "unsubscribe" link appearing in the body of the message or by contacting the Operator in writing through the means of contact detailed in this Policy.</li>
+      <li><strong>Push notifications:</strong> the application makes use of Push notifications for operational updates (such as order status) as well as for marketing updates. The user can control the notification settings through the settings menu on their end device or through the application settings. It is clarified that canceling Push notifications may harm the user's ability to receive real-time updates about their orders.</li>
+      <li><strong>Transfer of information by virtue of a legal obligation or corporate event:</strong> the platform operator will be entitled to transfer information to third parties also in the following cases: by virtue of a judicial order or a demand of a competent authority by law, within legal proceedings or a dispute between the user and the Operator or the Supplier, or in the event of a structural change in the platform operator (such as a merger, acquisition or sale of activity), provided that the absorbing entity accepts upon itself the provisions of this privacy policy towards the users.</li>
+    </ol>
 
-    <h3>4.5 Information We Do NOT Collect</h3>
-    <p><strong>We do NOT use:</strong></p>
-    <ul>
-      <li>Marketing cookies</li>
-      <li>Social network pixels (Facebook Pixel, Google Analytics, etc.)</li>
-      <li>External tracking tools</li>
-      <li>Advertising identifiers</li>
-    </ul>
+    <h2>Chapter C: Information Security, Retention Period, Rights of Data Subjects, and Policy Changes</h2>
+    <ol start="14">
+      <li>The platform operator attaches importance to the protection of the collected information and takes reasonable and accepted security measures. To this end, technological and organizational protection measures are implemented in the application, including among others: 14.1. the use of standard encryption protocols for the transfer of information (such as TLS/SSL) and for its storage. 14.2. the use of SecureStore, Apple Keychain and Android Keystore components for the secure storage of encryption keys and access details (Tokens) on the user's device. 14.3. the implementation of a Row Level Security (RLS) mechanism in the Supabase infrastructure, ensuring that each user can access only the information belonging to them or the information they are authorized to view.</li>
+      <li>The user acknowledges and agrees that despite the security measures taken, it is not within the platform operator's ability to ensure absolute immunity of the information from unauthorized intrusion, technical malfunctions, cyber attacks or human errors. Without derogating from the above, the user bears sole responsibility for the security of their end device, including the installation of software updates and protection measures against viruses and malicious software, which may affect their privacy during the use of the application.</li>
+      <li><strong>Information retention period:</strong> the personal information will be retained in the Operator's systems for the period required for the purpose of fulfilling the processing purposes detailed in this Policy, or for a longer period as required for the purpose of complying with legal obligations (such as retaining accounting documents for 7 years), protecting the Operator's legal rights or resolving disputes. Information published in the "Wanted" community space will be retained until its removal by the user or until the closure of the notice, subject to the Operator's right to keep an archival copy for operational or legal purposes. At the end of the required period, the Operator will act to delete the personal information or to perform anonymization, so that it will no longer be possible to identify the user from the remaining data.</li>
+      <li><strong>Right of review:</strong> the user is entitled to review the information held about them in the Operator's database, by themselves or through their attorney authorized in writing.</li>
+      <li><strong>Correction and deletion of information:</strong> to the extent the user found that the information about them is incorrect, incomplete, unclear or not up-to-date, they may contact the database owner with a request to correct the information or delete it.</li>
+      <li><strong>Right to account deletion:</strong> the user may request at any time the deletion of their account in the application. It is clarified that the deletion of the account will lead to the deletion of the identified personal information, except for information that the Operator is obligated to retain by law or for legitimate interests as stated in this privacy policy.</li>
+      <li>For the purpose of exercising their rights, the user must send an inquiry to the Operator, at the email address: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a>. The Operator will examine the inquiry and respond to it within the period prescribed by law. For the purpose of identifying the user and preventing the exposure of information to unauthorized parties, the Operator may require the user to provide additional identifying details or documents before providing a response to the inquiry.</li>
+      <li><strong>Changes to the privacy policy:</strong> the platform operator may update or change the provisions of this privacy policy from time to time, at its sole discretion, among other things due to technological changes, version updates in the application or changes in the requirements of the law. In the event of a material change in the provisions of the Policy (such as a change in the processing purposes or the transfer of information to new third parties), the Operator will publish a notice in the application or send a notice to users by email. Continued use of the application after the publication of the updated Policy constitutes the user's consent to the changes. The most up-to-date Policy will be available at all times through the settings menu in the application.</li>
+    </ol>
 
-    <h2>5. Use of Information</h2>
-    <p>We use your information solely for the following purposes:</p>
-    <ul>
-      <li>Providing App services (displaying catalog, orders, listings)</li>
-      <li>Forwarding order details to Hippopotamus Ltd. for shipping and payment processing</li>
-      <li>Sending order confirmation emails and status updates</li>
-      <li>Sending in-app push notifications about orders</li>
-      <li>Technical support and customer service</li>
-      <li>Service improvement</li>
-      <li>Legal compliance</li>
-    </ul>
-    <p>
-      <strong>We do NOT send marketing emails.</strong> You will receive only operational emails (order confirmation, status updates, etc.).
-    </p>
+    <h2>Contact Details</h2>
+    <p>22. For any question, clarification or complaint regarding this privacy policy or the manner of handling the personal information, you may contact the platform operator in the following ways:</p>
+    <div class="important-box">
+      <p><strong>Email:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></p>
+      <p><strong>Contact through the "Contact Us" form in the application.</strong></p>
+    </div>
 
-    <h2>6. Sharing Information with Third Parties</h2>
-    <p>We share information only with the following services, for operational purposes only:</p>
-
-    <h3>6.1 Hippopotamus Ltd.</h3>
-    <p>
-      <strong>Purpose:</strong> Order fulfillment, payment processing, shipping, and after-sales service.<br>
-      <strong>Information transferred:</strong> Name, shipping address, phone number, order details.
-    </p>
-
-    <h3>6.2 Supabase (Data Storage)</h3>
-    <p>
-      <strong>Purpose:</strong> Secure database and authentication services.<br>
-      <strong>Information:</strong> All information shown in the App is stored on Supabase's secure servers.<br>
-      <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>
-    </p>
-
-    <h3>6.3 Resend (Email Delivery)</h3>
-    <p>
-      <strong>Purpose:</strong> Delivery of order confirmation emails and status updates.<br>
-      <strong>Information:</strong> Email address and order details.<br>
-      <a href="https://resend.com/privacy" target="_blank">Resend Privacy Policy</a>
-    </p>
-
-    <h3>6.4 Expo (App Platform)</h3>
-    <p>
-      <strong>Purpose:</strong> App infrastructure and Push Notifications.<br>
-      <strong>Information:</strong> Device Push Token.<br>
-      <a href="https://expo.dev/privacy" target="_blank">Expo Privacy Policy</a>
-    </p>
-
-    <h3>6.5 Google (Sign-In)</h3>
-    <p>
-      <strong>Purpose:</strong> Convenient sign-in option.<br>
-      <strong>Information:</strong> Only if you chose to sign in with Google — name and email.<br>
-      <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
-    </p>
-
-    <h3>6.6 Apple (Sign-In)</h3>
-    <p>
-      <strong>Purpose:</strong> Convenient sign-in option on iOS devices.<br>
-      <strong>Information:</strong> Only if you chose to sign in with Apple — name and email.<br>
-      <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>
-    </p>
-
-    <h3>6.7 Cloudflare (Admin Hosting)</h3>
-    <p>
-      <strong>Purpose:</strong> Internal company management interface hosting.<br>
-      <strong>Information:</strong> Does not directly touch customer data.
-    </p>
-
-    <p>
-      <strong>We do NOT sell your data to any third party, under any circumstances.</strong>
-    </p>
-
-    <h2>7. Data Security</h2>
-    <p>We employ reasonable security measures to protect your information:</p>
-    <ul>
-      <li>Communication encryption (HTTPS/TLS)</li>
-      <li>Password hashing</li>
-      <li>Row-Level Security (RLS) database protection</li>
-      <li>Regular backups</li>
-      <li>Access limited to authorized personnel only</li>
-    </ul>
-    <p>
-      However, we cannot guarantee absolute security. In case of a material breach — you will be notified as soon as possible.
-    </p>
-
-    <h2>8. Data Retention</h2>
-    <p>
-      We retain your information as long as you have an active account. If you decide to delete your account — we will delete your identifying information within 30 days, except for information we are required to retain by law (e.g., invoice details per the Income Tax Ordinance).
-    </p>
-
-    <h2>9. Your Rights</h2>
-    <p>Under the Israeli Privacy Protection Law and the European GDPR, you have the following rights:</p>
-    <ul>
-      <li><strong>Right of access</strong> — to receive a copy of the information we hold about you</li>
-      <li><strong>Right of rectification</strong> — to correct inaccurate information</li>
-      <li><strong>Right of erasure</strong> — to request deletion of your information</li>
-      <li><strong>Right to object</strong> — to object to certain processing</li>
-      <li><strong>Right to portability</strong> — to receive the information in a structured format</li>
-    </ul>
-    <p>
-      To exercise these rights — contact us at: <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a>
-    </p>
-
-    <h2>10. Children Under 18</h2>
-    <p>
-      The Service is not intended for children under 18. We do not knowingly collect information from minors.
-      If we learn that we have collected information from a minor — we will delete it immediately.
-    </p>
-
-    <h2>11. Changes to the Policy</h2>
-    <p>
-      We may update the Privacy Policy from time to time. Material changes will be displayed in the App and sent by email. Continued use after an update constitutes acceptance of the new policy.
-    </p>
-
-    <h2>12. Contact</h2>
-    <p>
-      For questions, comments, or requests regarding this Privacy Policy, contact:
-    </p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:support@kikienjoy.com">support@kikienjoy.com</a></li>
-      <li><strong>Address:</strong> Dean Tsatsis, 38 Ushishkin St., Kiryat Motzkin, Israel</li>
-    </ul>
-
-    <h2>13. Governing Law and Jurisdiction</h2>
-    <p>
-      This Privacy Policy is governed exclusively by Israeli law. The exclusive jurisdiction over any dispute relating to this policy lies with the courts of the Haifa District, Israel.
-    </p>
-
+    <div class="footer">
+      <p>This privacy policy was last updated on 03.08.2026.</p>
+      <p class="binding-note">The English translation is provided for the user's convenience only. In any case of conflict or discrepancy between the Hebrew version and the translation, the Hebrew version shall prevail.</p>
+      <p>© 2026 Wooof. All rights reserved.</p>
+    </div>
   </div>
-
-  <div class="footer">
-    <p>
-      © 2026 Wooof. כל הזכויות שמורות. | All rights reserved.
-    </p>
-  </div>
-
 </div>
 
 <script>
@@ -552,13 +260,10 @@
     document.body.setAttribute('data-lang', lang);
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
     window.scrollTo(0, 0);
   }
 </script>
-
 </body>
 </html>
