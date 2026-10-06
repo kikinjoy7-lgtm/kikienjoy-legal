@@ -15,3 +15,8 @@ node_modules/
 # Internal lawyer-review drafts — NEVER deploy to the public site (contains
 # placeholders + 🟨 lawyer-approval notes). Kept local / shared with the lawyer only.
 drafts/
+
+# Secrets: Apple keys, Firebase service accounts, encrypted vaults (2026-10-06)
+*.p8
+*adminsdk*.json
+*.dmg
